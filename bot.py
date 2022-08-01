@@ -46,12 +46,11 @@ def alert_received():
 
 
     # uncomment if you are implementing a controller bot
-    '''
     WT_ROOM_ID = raw_json['data']['roomId']
     personEmail_json = raw_json['data']['personEmail']
     if personEmail_json != WT_BOT_EMAIL:
         api.messages.create(roomId=WT_ROOM_ID, markdown=message)
-    '''
+    
 
     return jsonify({'success': True})
 
